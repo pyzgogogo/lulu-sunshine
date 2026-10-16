@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="噜噜，阳光里，仍有你。一张珍藏日常与想念的互动全息闪卡。">
+  <title>噜噜 · 阳光里，仍有你</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+<meta property="og:title" content="噜噜 · 阳光里，仍有你">
+<meta property="og:description" content="那些被你照亮的日子，会一直在。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pyzgogogo.github.io/lulu-sunshine/">
+<meta property="og:image" content="https://pyzgogogo.github.io/lulu-sunshine/assets/share-preview.png">
+<link rel="canonical" href="https://pyzgogogo.github.io/lulu-sunshine/">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="./" aria-label="噜噜的纪念闪卡">A LITTLE SUNSHINE</a>
+    <span id="edition" class="edition">ALWAYS CHERISHED</span>
+  </header>
+
+  <main>
+    <section class="identity" aria-labelledby="card-title">
+      <p id="subtitle" class="kicker">阳光里，仍有你</p>
+      <h1 id="card-title">噜噜</h1>
+      <div class="actions" aria-label="闪卡操作">
+        <button id="auto" type="button" aria-pressed="false">自动轻转</button>
+        <button id="flip" type="button">看看背面</button>
+        <button id="reset" type="button">回到起初</button>
+        <button id="save" type="button">保存这一刻</button>
+      </div>
+    </section>
+
+    <section class="display" aria-label="噜噜的互动全息闪卡">
+      <div id="stage" tabindex="0" role="img" aria-label="拖动或触摸可轻轻转动闪卡，滚轮可缩放，按 F 看另一面，按 R 回到起初。">
+        <div id="loading" role="status">正在加载噜噜的闪卡…</div>
+      </div>
+      <output id="view-label" class="view-label">正面</output>
+    </section>
+  </main>
+
+  <section class="controls" aria-label="闪卡效果调节">
+    <label>
+      <span>微光 <output id="foil-value">100%</output></span>
+      <input id="foil" type="range" min="0" max="1.2" step="0.01" value="1">
+    </label>
+    <label>
+      <span>画面留白 <output id="scale-value">1.25</output></span>
+      <input id="scale" type="range" min="1" max="1.7" step="0.01" value="1.25">
+    </label>
+    <label>
+      <span>噜噜的景深 <output id="depth-value">0.40</output></span>
+      <input id="depth" type="range" min="0" max="0.8" step="0.01" value="0.4">
+    </label>
+    <label>
+      <span>阳光的景深 <output id="bg-depth-value">−0.25</output></span>
+      <input id="bg-depth" type="range" min="-0.65" max="0" step="0.01" value="-0.25">
+    </label>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+</html>

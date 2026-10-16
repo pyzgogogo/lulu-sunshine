@@ -1,0 +1,33 @@
+{
+  "mode": "holographic",
+  "title": "噜噜",
+  "subtitle": "阳光里，仍有你",
+  "technique": "把想念，放在有阳光的地方。",
+  "tagline": "被你照亮的日子，会一直在。",
+  "edition": "一直珍藏",
+  "collection": "A LITTLE SUNSHINE",
+  "description": "为噜噜制作的一张温柔陪伴卡。保留她蓝灰色眼睛、银灰奶油色的长毛、白色小爪和玩耍时的神态，让有阳光的日常被好好珍藏。",
+  "font": "C:/Windows/Fonts/msyh.ttc",
+  "parameters": {
+    "subjectScale": 1.4,
+    "subjectDepth": 0.26,
+    "backgroundDepth": -0.16,
+    "foil": 0.38,
+    "particles": 0.3,
+    "glow": 0.15
+  },
+  "safeArea": {
+    "scale": 1.0,
+    "offset": [
+      0.0,
+      0.0
+    ]
+  },
+  "assets": {
+    "subject": "./assets/subject.png",
+    "background": "./assets/background.png",
+    "text": "./assets/text.png",
+    "lineart": "./assets/lineart.png",
+    "model": "./assets/card.glb"
+  }
+}
