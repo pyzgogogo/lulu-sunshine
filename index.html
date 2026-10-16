@@ -1,65 +1,73 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="噜噜，阳光里，仍有你。一张珍藏日常与想念的互动全息闪卡。">
-  <title>噜噜 · 阳光里，仍有你</title>
-  <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="./style.css">
-<meta property="og:title" content="噜噜 · 阳光里，仍有你">
-<meta property="og:description" content="那些被你照亮的日子，会一直在。">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://pyzgogogo.github.io/lulu-sunshine/">
-<meta property="og:image" content="https://pyzgogogo.github.io/lulu-sunshine/assets/share-preview.png">
-<link rel="canonical" href="https://pyzgogogo.github.io/lulu-sunshine/">
-</head>
-<body>
-  <header class="topbar">
-    <a class="wordmark" href="./" aria-label="噜噜的纪念闪卡">A LITTLE SUNSHINE</a>
-    <span id="edition" class="edition">ALWAYS CHERISHED</span>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff">
+<title>噜噜 · 阳光里，仍有你</title><meta name="description" content="把想念放在有阳光的地方。转动闪卡、摸摸噜噜，翻开一封温柔的信。">
+<link rel="icon" href="data:,"><link rel="preload" as="image" href="./assets/front-v2.jpg" fetchpriority="high">
+<link rel="stylesheet" href="./style-v2.css?v=2"><link rel="stylesheet" href="./back.css?v=2">
+<meta property="og:title" content="噜噜 · 阳光里，仍有你"><meta property="og:description" content="那些被你照亮的日子，会一直在。"><meta property="og:type" content="website"><meta property="og:url" content="https://pyzgogogo.github.io/lulu-sunshine/"><meta property="og:image" content="https://pyzgogogo.github.io/lulu-sunshine/assets/front-v2.jpg"><link rel="canonical" href="https://pyzgogogo.github.io/lulu-sunshine/">
+</head><body>
+<header class="topbar"><a class="wordmark" href="./">A LITTLE SUNSHINE</a><span class="edition">ALWAYS CHERISHED</span></header>
+<main><section class="identity" aria-labelledby="card-title">
+<p class="kicker">阳光里，仍有你</p><h1 id="card-title">噜噜</h1>
+<div class="actions" aria-label="陪噜噜待一会儿">
+<button id="flip" class="primary" type="button" data-interactive disabled>翻卡读信</button>
+<button id="pet" type="button" data-interactive disabled>摸摸噜噜</button>
+<button id="play" type="button" aria-pressed="false" data-interactive disabled>陪噜噜玩</button>
+<button id="sun" type="button" aria-pressed="false" data-interactive disabled>晒晒太阳</button>
+<button id="save" type="button" data-interactive disabled>保存卡片</button>
+</div><p id="interaction-status" class="interaction-status" role="status" aria-live="polite">阳光里，仍有你。</p>
+<p class="usage">轻轻拖动卡片，也可以碰一碰噜噜的小脑袋。</p>
+</section>
+<section class="display" aria-label="噜噜的陪伴闪卡">
+<div id="card-scene" class="card-scene" data-flipped="false" tabindex="0" role="region" aria-label="拖动转动卡片，F 或回车键翻面，R 键复位">
+<div class="card-aspect"></div><div id="card-tilt" class="card-tilt"><div class="card-flipper">
+<div class="card-face card-front" aria-hidden="false">
+<img id="front-preview" class="front-preview" src="./assets/front-v2.jpg" width="1024" height="1536" fetchpriority="high" alt="噜噜抬起小爪，坐在洒满阳光的窗边。卡面写着：被你照亮的日子，会一直在。" draggable="false">
+<div class="art-layers" aria-hidden="true"><img id="background-layer" class="art-layer" alt="" draggable="false"><img id="subject-layer" class="art-layer subject-layer" alt="" draggable="false"><img id="text-layer" class="art-layer text-layer" alt="" draggable="false"></div>
+<div class="foil" aria-hidden="true"></div><div class="sunbeam" aria-hidden="true"></div><div class="front-edge"></div><div id="effects" class="effects" aria-hidden="true"></div>
+<button id="toy" class="toy" type="button" hidden aria-label="拖动小羽毛，陪噜噜玩"><svg viewBox="0 0 48 110" aria-hidden="true"><path d="M24 0v38" fill="none" stroke="#ac8b58" stroke-width="1.6"/><circle cx="24" cy="37" r="4" fill="#d4b77e"/><path d="M25 41c-17 4-22 26-12 49 5-3 13-12 16-22 1 14-3 27-8 37 20-15 22-40 4-64Z" fill="#d5b99e"/><path d="m25 43-7 47m4-34-8 4m7 8-9 6m15-16 7 5m-8 8 6 7" fill="none" stroke="#fff8ea" stroke-width="1.5"/></svg></button>
+</div><div class="card-face card-back" aria-hidden="true"><div class="back-paper">
+  <div class="back-topline">
+    <span>写给我最爱的噜噜</span>
+    <svg class="back-paw" viewBox="0 0 36 36" aria-hidden="true"><ellipse cx="10" cy="12" rx="3.2" ry="4.5" transform="rotate(-22 10 12)"/><ellipse cx="18" cy="8" rx="3.1" ry="4.3"/><ellipse cx="26" cy="12" rx="3.2" ry="4.5" transform="rotate(22 26 12)"/><path d="M8.5 24c0-4 5.4-10.3 9.5-10.3S27.5 20 27.5 24c0 3.8-3.2 5.1-5.8 4.2-2.3-.8-5.1-.8-7.4 0-2.6.9-5.8-.4-5.8-4.2Z"/></svg>
+  </div>
+
+  <header class="back-heading">
+    <div class="back-portrait"><img src="./assets/subject-v2.webp" alt="噜噜抬起小爪的模样" draggable="false" loading="lazy"></div>
+    <div class="back-title-group">
+      <p class="back-name">噜噜 <span>· 一直被爱着</span></p>
+      <h2>阳光里，仍有你</h2>
+      <span class="back-title-rule" aria-hidden="true"></span>
+    </div>
   </header>
 
-  <main>
-    <section class="identity" aria-labelledby="card-title">
-      <p id="subtitle" class="kicker">阳光里，仍有你</p>
-      <h1 id="card-title">噜噜</h1>
-      <div class="actions" aria-label="闪卡操作">
-        <button id="auto" type="button" aria-pressed="false">自动轻转</button>
-        <button id="flip" type="button">看看背面</button>
-        <button id="reset" type="button">回到起初</button>
-        <button id="save" type="button">保存这一刻</button>
-      </div>
-    </section>
+  <div class="back-letter">
+    <p>我记得你伸出小爪的认真，<br>也记得你望过来时，眼睛里的光。</p>
+    <p>想你的时候，可以笑，也可以难过。<br>那些一起度过的小小日常，<br>我都会轻轻地留着。</p>
+  </div>
 
-    <section class="display" aria-label="噜噜的互动全息闪卡">
-      <div id="stage" tabindex="0" role="img" aria-label="拖动或触摸可轻轻转动闪卡，滚轮可缩放，按 F 看另一面，按 R 回到起初。">
-        <div id="loading" role="status">正在加载噜噜的闪卡…</div>
-      </div>
-      <output id="view-label" class="view-label">正面</output>
-    </section>
-  </main>
-
-  <section class="controls" aria-label="闪卡效果调节">
-    <label>
-      <span>微光 <output id="foil-value">100%</output></span>
-      <input id="foil" type="range" min="0" max="1.2" step="0.01" value="1">
-    </label>
-    <label>
-      <span>画面留白 <output id="scale-value">1.25</output></span>
-      <input id="scale" type="range" min="1" max="1.7" step="0.01" value="1.25">
-    </label>
-    <label>
-      <span>噜噜的景深 <output id="depth-value">0.40</output></span>
-      <input id="depth" type="range" min="0" max="0.8" step="0.01" value="0.4">
-    </label>
-    <label>
-      <span>阳光的景深 <output id="bg-depth-value">−0.25</output></span>
-      <input id="bg-depth" type="range" min="-0.65" max="0" step="0.01" value="-0.25">
-    </label>
+  <section class="back-memories" aria-label="翻看噜噜的小回忆">
+    <div class="memory-tabs" role="group" aria-label="选择一个小回忆">
+      <button type="button" class="memory-tab is-active" data-memory="paw" aria-pressed="true">小爪爪</button>
+      <button type="button" class="memory-tab" data-memory="sun" aria-pressed="false">晒太阳</button>
+      <button type="button" class="memory-tab" data-memory="eyes" aria-pressed="false">亮眼睛</button>
+    </div>
+    <p id="memory-line" class="memory-line" aria-live="polite">你抬起的小爪，好像还在轻轻碰我的手。</p>
   </section>
 
-  <script src="./app.js"></script>
-</body>
-</html>
+  <div class="back-note-area">
+    <button id="write-note" class="write-note" type="button"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 13 9-9 3 3-9 9-4 1 1-4Zm7-7 3 3"/></svg><span>留一句想念</span></button>
+    <p id="saved-note" class="saved-note" hidden></p>
+  </div>
+
+  <footer class="back-signoff"><span aria-hidden="true">✧</span> 那些被你照亮的日子，会一直在 <span aria-hidden="true">✧</span></footer>
+</div>
+</div>
+</div></div></div>
+<div class="view-meta"><span id="view-label">轻轻转动 · 把阳光留住</span><button id="reset" class="reset-button" type="button" data-interactive disabled>回到起初</button></div>
+<p id="load-status" class="load-status" hidden>卡面还在路上，可以先翻卡读信。</p>
+</section></main>
+<noscript><p class="noscript-note">这一页已为你留住完整卡面。开启浏览器脚本后，还可以翻卡读信和轻轻互动。</p></noscript>
+<div id="note-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="note-heading" hidden><div class="modal-panel"><button class="modal-close" data-close type="button" aria-label="关闭">×</button><h2 id="note-heading">留一句想念</h2><form id="note-form"><label for="note-input">今天，想对噜噜说些什么？</label><p>仅保存在本机，分享链接不会带上留言；保存卡背图片可以把这句话一起留下。</p><textarea id="note-input" maxlength="80" placeholder="今天的阳光很好，也很想你。"></textarea><div class="modal-actions"><button type="submit">把这句留下</button><button id="clear-note" class="quiet" type="button">清空留言</button></div></form></div></div>
+<div id="save-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="save-heading" hidden><div class="modal-panel"><button class="modal-close" data-close type="button" aria-label="关闭">×</button><h2 id="save-heading">把这一刻留住</h2><p>手机上可以长按图片保存。</p><img id="save-image" class="save-preview" alt="可保存的噜噜卡片" hidden><p id="save-error" hidden>可以先长按这张卡面保存；翻卡寄语仍在页面里陪着你。</p><a id="download-image" class="download-button" hidden>下载图片</a></div></div>
+<script src="./app-v2.js?v=2" defer></script></body></html>
